@@ -9,129 +9,164 @@
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
 	 crossorigin="anonymous">
 	<link href="https://fonts.googleapis.com/css?family=Raleway:400,700" rel="stylesheet">
+	<script src="script.js"></script>
 </head>
 
 <body>
 	<header>
-		<img class="logo" src="" alt="logo">
 		<nav>
 			<ul>
 				<li>
 					<a href="#">Home</a>
 				</li>
 				<li>
-					<a href="#">About</a>
-				</li>
-				<li>
-					<a href="#">Contact</a>
+					<a href="#partners">Partners</a>
 				</li>
 			</ul>
 		</nav>
 	</header>
 	<!--hero section !-->
 	<section class="home_hero">
-		<h1 class="title">
-			<span>Make things look great for</span>
-			greate people</h1>
-		<a href=" " class="btn">See our work</a>
+		<h1 class="title">Marvels</h1>
+		<h3>We make great softwares for great companies.</h3>
 	</section>
 
 	<!-- about section with image !-->
-	<section class="home_about">
+	<!-- <section id="about" class="home_about">
 		<div class="home_text_about">
 			<h2>Who we are</h2>
-			<p>Lorem lorem lorem lorem. Lorem lorem lorem lorem Lorem lorem lorem lorem Lorem lorem lorem lorem. Lorem lorem lorem lorem
-				Lorem lorem lorem lorem Lorem lorem lorem lorem Lorem lorem lorem lorem.Lorem lorem lorem lorem</p>
+			<p>We make great softwares for great companies.</p>
 		</div>
-	</section>
+	</section> -->
 
 	<!-- portfolio !-->
-	<section class="portfolio clearfix">
-		<h2>Some of our work</h2>
+	<section id="partners" class="portfolio clearfix">
+		<h2 id="head_text">Partners</h2>
+		
 		<figure class="portfolio_item">
-			<img src="./images/portfolio.jpg">
+			<a href="http://www.amazon.in" >
+			<img src="./images/Amazon.jpg">
 			<figcaption class="portfolio-description">
-				<p>Project title</p>
-				<a href="" class="btn_small">Project details</a>
+				<p>Amazon</p>
 			</figcaption>
+			</a>
 		</figure>
 
 
 		<figure class="portfolio_item">
-			<img src="./images/portfolio.jpg">
+			<a href="http://www.google.com" >
+			<img src="./images/Medium.png">
 			<figcaption class="portfolio-description">
-				<p>Project title</p>
-				<a href="" class="btn_small">Project details</a>
+				<p>Medium</p>
 			</figcaption>
+			</a>
 		</figure>
 
 		<figure class="portfolio_item">
-			<img src="./images/portfolio.jpg">
+			<a href="http://www.youtube.com" >
+			<img src="./images/YouTube.png">
 			<figcaption class="portfolio-description">
-				<p>Project title</p>
-				<a href="" class="btn_small">Project details</a>
+				<p>Youtube</p>
 			</figcaption>
+			</a>
+		</figure>
+		<figure class="portfolio_item">
+			<a href="http://www.google.com" >
+			<img src="./images/Google.jpg">
+			<figcaption class="portfolio-description">
+				<p>Google</p>
+			</figcaption>
+			</a>
 		</figure>
 
-		<figure class="portfolio_item">
-			<img src="./images/portfolio.jpg">
-			<figcaption class="portfolio-description">
-				<p>Project title</p>
-				<a href="" class="btn_small">Project details</a>
-			</figcaption>
-		</figure>
-
-		<figure class="portfolio_item">
-			<img src="./images/portfolio.jpg">
-			<figcaption class="portfolio-description">
-				<p>Project title</p>
-				<a href="" class="btn_small">Project details</a>
-			</figcaption>
-		</figure>
-
-		<figure class="portfolio_item">
-			<img src="./images/portfolio.jpg">
-			<figcaption class="portfolio-description">
-				<p>Project title</p>
-				<a href="" class="btn_small">Project details</a>
-			</figcaption>
-		</figure>
 	</section>
 
 
 	<section class="cta">
 		<div class="container">
-			<h1>Do you like what you see?</h1>
-			<h3>Then what are you waiting for?</h3>
-			<a href="#" class="btn">Hire us</a>
-		</div>
+
+			<form name="contact_form" class="well form-horizontal" action="#" id="contact_form">
+				<fieldset>
+
+					<!-- Form Name -->
+					<legend>Contact Us Today!</legend>
+
+					<!-- Text input-->
+
+					<div class="form-group">
+					<label class="col-md-4 control-label">Name</label>  
+					<div class="col-md-4 inputGroupContainer">
+					<div class="input-group">
+					<span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+					<input id="name_form" name="name" placeholder="First Name" class="form-control"  type="text" onchange="handleName()">
+						</div>
+					</div>
+					</div>
+
+					<!-- Text input-->
+						
+					<div class="form-group">
+					<label class="col-md-4 control-label">Phone #</label>  
+						<div class="col-md-4 inputGroupContainer">
+						<div class="input-group">
+							<span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span>
+					<input id="number" name="number" placeholder="(845)555-1212" class="form-control" type="text" >
+						</div>
+					</div>
+					</div>
+
+					<!-- Text input-->
+					<div class="form-group">
+					<label class="col-md-4 control-label">Company Name</label>  
+					<div class="col-md-4 inputGroupContainer">
+						<div class="input-group">
+							<span class="input-group-addon"><i class="glyphicon glyphicon-globe"></i></span>
+					<input id="company_name" name="company_name" placeholder="Company name" class="form-control" type="text">
+						</div>
+					</div>
+					</div>
+
+					<!-- Button -->
+					<div class="form-group">
+					<label class="col-md-4 control-label"></label>
+					<div class="col-md-4">
+						<!-- <button type="submit" class="btn btn-warning" >Send <span class="glyphicon glyphicon-send"></span></button> -->
+						<input type="button" value="Send" onclick="return validate_form()"/>
+					</div>
+					</div>
+
+					<div id="success_message">Message</div>
+
+				</fieldset>
+			</form>
+		</div><!-- /.container -->
 	</section>
 
 	<footer class="site_footer">
-		<h4>Follow us:</h4>
-		<ul class="social">
-			<li>
-				<a href="#">
-					<i class="fab fa-facebook-f"></i>
-				</a>
-			</li>
-			<li>
-				<a href="#">
-					<i class="fab fa-instagram"></i>
-				</a>
-			</li>
-			<li>
-				<a href="#">
-					<i class="fab fa-twitter"></i>
-				</a>
-			</li>
-			<li>
-				<a href="#">
-					<i class="fab fa-linkedin"></i>
-				</a>
-			</li>
-		</ul>
-	</footer>
+			<h4>Follow us:</h4>
+			<ul class="social">
+				<li>
+					<a href="#">
+						<i class="fab fa-facebook-f"></i>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<i class="fab fa-instagram"></i>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<i class="fab fa-twitter"></i>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<i class="fab fa-linkedin"></i>
+					</a>
+				</li>
+			</ul>
+		</footer>
 
 </body>
 
